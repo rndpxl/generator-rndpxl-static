@@ -1,15 +1,9 @@
-# generator-mg 
+# generator-rndpxl 
 
 A generator for [Yeoman](http://yeoman.io).
 
 
 ## Getting Started
-
-### What is Mg?
-
-Generator-mg (named after the combustible element, Magnesium) is [Sparkbox's](https://github.com/sparkbox) firestarter for frontend projects.
-
-![](http://i.imgur.com/58gU01p.jpg?1)
 
 To get started:
 

@@ -4,7 +4,7 @@ var path = require('path');
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 
-var MgGenerator = module.exports = function MgGenerator(args, options, config) {
+var RpsGenerator = module.exports = function RpsGenerator(args, options, config) {
   yeoman.generators.Base.apply(this, arguments);
 
   this.on('end', function () {
@@ -22,9 +22,9 @@ var MgGenerator = module.exports = function MgGenerator(args, options, config) {
   this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
 };
 
-util.inherits(MgGenerator, yeoman.generators.Base);
+util.inherits(RpsGenerator, yeoman.generators.Base);
 
-MgGenerator.prototype.askFor = function askFor() {
+RpsGenerator.prototype.askFor = function askFor() {
   var cb = this.async();
 
   // have Yeoman greet the user.
@@ -42,18 +42,18 @@ MgGenerator.prototype.askFor = function askFor() {
   }.bind(this));
 };
 
-MgGenerator.prototype.app = function app() {
+RpsGenerator.prototype.app = function app() {
   //
 };
 
-MgGenerator.prototype.projectfiles = function projectfiles() {
+RpsGenerator.prototype.projectfiles = function projectfiles() {
   this.template('_package.json', 'package.json');
   this.template('_bower.json', 'bower.json');
   this.template('_bowerrc', '.bowerrc');
   this.template('_Gruntfile.coffee', 'Gruntfile.coffee');
 };
 
-MgGenerator.prototype.runtime = function runtime() {
+RpsGenerator.prototype.runtime = function runtime() {
   this.copy('gitignore', '.gitignore');
   this.directory('public', 'public');
   this.directory('scss', 'scss');
@@ -63,6 +63,6 @@ MgGenerator.prototype.runtime = function runtime() {
   this.directory('templates', 'templates');
   this.directory('features', 'features');
   this.directory('reports', 'reports');
-  this.directory('opt-imgs', 'opt-imgs');
+  this.directory('opt-iRpss', 'opt-iRpss');
   this.directory('grunt', 'grunt');
 };

@@ -1,23 +1,23 @@
 {
-  "name": "generator-mg",
-  "version": "0.1.8",
-  "description": "Mg is the starting point for all frontend projects at Sparkbox",
+  "name": "generator-rps",
+  "version": "0.0.1",
+  "description": "Generator-rps is a starting point for frontend projects powered by Yeoman.",
   "keywords": [
     "yeoman-generator",
-    "sparkbox",
-    "mg",
+    "round-pixel",
+    "rps",
     "project-init"
   ],
-  "homepage": "https://github.com/sparkbox/generator-mg",
-  "bugs": "https://github.com/sparkbox/generator-mg/issues",
+  "homepage": "https://github.com/rndpxl/generator-rps",
+  "bugs": "https://github.com/rndpxl/generator-rps/issues",
   "author": {
-    "name": "Adam Simpson",
-    "email": "adam@heysparkbox.com"
+    "name": "Dan Rosenthal",
+    "email": "dan@rndpxl.com"
   },
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sparkbox/generator-mg.git"
+    "url": "https://github.com/rndpxl/generator-rps"
   },
   "scripts": {
     "test": "mocha"

@@ -1,7 +1,5 @@
-@import "general-variables";
-@import "colors";
-@import "general-mixins";
-@import "normalize";
-@import "general-extends";
-
-//@import files here
+@import "utilies/index";
+@import "base/index";
+@import "modules/index";
+@import "state/index";
+@import "theme/index";

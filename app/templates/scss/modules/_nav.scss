@@ -1,0 +1,24 @@
+.nav {
+  .list__item {
+    display: inline-block;
+    @include rem( margin-right, .5 );
+    &:last-child {
+      margin-right: none;
+    }
+    a {
+      @include rem(padding, .5)
+    }
+  }
+  &--right {
+    @include sb-media( 48.0625em ) {
+      text-align: right;
+    }
+  }
+  &--centered {
+    text-align: center;
+  }
+}
+
+.nav--header {
+  text-align: right;
+}

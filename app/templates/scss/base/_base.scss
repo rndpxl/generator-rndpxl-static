@@ -1,0 +1,62 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family-sans-serif;
+  color: $c--less-black;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+  &:link,
+  &:hover,
+  &:active,
+  &:visited {
+    text-decoration: none;
+    color: $c--white;
+    outline: 0;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+img {
+  @todo Make this maxwidth once the images are optimized;
+  width: 100%;
+}
+
+p {
+  margin: 0; 
+}
+p + p {
+  @include rem( margin-top, 1 );
+}
+

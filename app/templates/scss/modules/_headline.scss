@@ -1,0 +1,36 @@
+.headline {
+  &--alpha, &--beta, &--huge {
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.25;
+  }
+  &--alpha {
+    font-size: 1.125em;
+    font-weight: 700;
+    @include sb-media ( 35em ) {
+      font-size: 1.875em;
+    }
+  }
+  &--beta {
+    font-size: 1em;
+    font-weight: 600;
+  }
+  &--logo {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  &--stylized {
+    font-weight: 400;
+    font-size: 1.875em;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  &--huge {
+    font-size: 2.5em;
+    font-weight: 700;
+    @include sb-media ( 35em ) {
+      font-size: 4.5em;
+    }
+  }
+}
+

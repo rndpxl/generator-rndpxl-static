@@ -1,0 +1,25 @@
+.hero {
+  position: relative;
+  z-index: 1;
+  height: 0;
+  padding-bottom: 60%;
+}
+.hero__media {
+  position: absolute;
+  z-index: 2;
+  @extend %full-size;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    @extend %full-size;
+    z-index: 3;
+  }
+  img {
+    height: auto;
+    width: 100%;
+}
+.hero__copy {
+  position: relative;
+  z-index: 4;
+}

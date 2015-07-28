@@ -1,0 +1,39 @@
+.banner {
+  position: relative;
+  z-index: 1;
+  color: $c--white;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 60%;
+}
+.banner__media {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  @extend %full-size;
+  .banner--content & {
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      @extend %full-size;
+      z-index: 3;
+    }
+  }
+  img {
+    height: 100%;
+    width: auto;
+  }
+}
+.banner__copy {
+  position: relative;
+  z-index: 4;
+}
+.banner__header {
+  position: relative;
+  z-index: 4;
+  }
+}
+.banner--content {
+  
+}

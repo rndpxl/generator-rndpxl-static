@@ -1,0 +1,53 @@
+input, textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  &:focus {
+
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+::-webkit-input-placeholder {
+   color: $c--less-black;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $c--less-black;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $c--less-black;  
+}
+
+:-ms-input-placeholder {  
+   color: $c--less-black;  
+}
+
+.form__header {
+
+}
+
+.form__button {
+  overflow: hidden;
+  height: auto;
+  display: block;
+  text-align: center;
+}
+
+button,
+.button {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  &:hover {
+
+  }
+}

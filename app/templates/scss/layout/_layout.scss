@@ -1,0 +1,23 @@
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  @include rem( padding-top, 2);
+  @include rem( padding-bottom, 2);
+}
+
+.visually-hidden { 
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 1px; 
+  margin: -1px; 
+  overflow: hidden; 
+  padding: 0; 
+  position: absolute; 
+  width: 1px; 
+}
+
+.l-block {
+  display: block;
+}

@@ -28,9 +28,9 @@ module.exports = (grunt) ->
   grunt.registerTask "bustcache", ["bushcaster:main", "string-replace:dist"]
 
   # Build tasks
-  grunt.registerTask "buildDev", [ "root-canal", "javascript:dev", "sass:dev", "assemble", "grunticon"]
+  grunt.registerTask "buildDev", [ "root-canal", "javascript:dev", "sass:dev", "autoprefixer", "assemble", "grunticon"]
 
-  grunt.registerTask "buildProduction", [ "root-canal", "javascript:dist", "sass:prod", "assemble", "grunticon", "bustcache"]
+  grunt.registerTask "buildProduction", [ "root-canal", "javascript:dist", "sass:prod", "autoprefixer", "assemble", "grunticon", "bustcache"]
 
   grunt.registerTask "server", ["connect", "watch"]
 

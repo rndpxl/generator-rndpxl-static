@@ -1,6 +1,6 @@
 {
   "name": "generator-rps",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Generator-rps is a starting point for frontend projects powered by Yeoman.",
   "keywords": [
     "yeoman-generator",
